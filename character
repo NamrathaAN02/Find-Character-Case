@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Solution {
+    
+    public static void main(String[] args) {
+        int res;
+        Scanner s= new Scanner(System.in);
+        String str = s.next();
+        char ch = str.charAt(0);
+        res = ch;
+        if( res >=65 && res<90){
+         System.out.println(1);  //uppercase 
+        }else if( res >=97 && res<=122  ){
+          System.out.println(0);  //lowercae   
+        }
+        else{
+            System.out.println(-1);  //not
+        }
+        
+
+    }
+}
